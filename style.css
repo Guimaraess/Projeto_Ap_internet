@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #001423;
+    margin: 0; /* Remova as margens padrão do body */
+    padding: 0; /* Remova o preenchimento padrão do body */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #00010d;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    position: fixed; /* Adicione a posição fixa */
+    top: 0; /* Defina a barra de menu no topo */
+    z-index: 999; /* Ajuste a ordem de sobreposição */
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+nav .animation {
+    position: absolute;
+    height: 3px;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+    width: 0;
+}
+
+nav a:nth-child(1):hover~.animation {
+    width: 100%;
+}
+
+nav a:nth-child(2):hover~.animation {
+    width: 100%;
+}
+
+nav a:nth-child(3):hover~.animation {
+    width: 100%;
+}
+
+nav a:nth-child(4):hover~.animation {
+    width: 100%;
+}
+
+nav a:nth-child(5):hover~.animation {
+    width: 100%;
+}
+
+
+footer {
+    background-color: #0d1318;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 1;
+    font-size: 15px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+    box-sizing: border-box;
+
+}
+.container {
+    display: flex;
+    width: 90vw;
+}
+.panel {
+    background-size: auto 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #0fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.activate {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+@media (max-width:480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+
+
+
