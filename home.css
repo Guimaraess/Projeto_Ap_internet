@@ -3,8 +3,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background: #001423;
-    margin: 0; /* Remova as margens padrão do body */
-    padding: 0; /* Remova o preenchimento padrão do body */
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -15,9 +15,9 @@ nav {
     border-radius: 8px;
     font-size: 0;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
-    position: fixed; /* Adicione a posição fixa */
-    top: 0; /* Defina a barra de menu no topo */
-    z-index: 999; /* Ajuste a ordem de sobreposição */
+    position: fixed;
+    top: 0; 
+    z-index: 999;
 }
 
 nav a {
